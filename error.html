@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="windows-1251">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Email error</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="page">
+  <style>
+    @font-face {
+      font-family: 'Navigo-Bold';
+      src: url('../fonts/Navigo-Bold.woff2') format('woff2'), url('../fonts/Navigo-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Navigo-Regular';
+      src: url('../fonts/Navigo-Regular.woff2') format('woff2'), url('../fonts/Navigo-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'ALS Hauss';
+      src: url('../fonts/ALSHauss-Regular.woff2') format('woff2'), url('ALSHauss-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'ALS Hauss';
+      src: url('../fonts/ALSHauss-Medium.woff2') format('woff2'), url('ALSHauss-Medium.woff') format('woff');
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'ALS Hauss';
+      src: url('../fonts/ALSHauss-Bold.woff2') format('woff2'), url('ALSHauss-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    html {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -ms-overflow-style: scrollbar;
+    }
+
+    *,
+    *::before,
+    *::after {
+      -webkit-box-sizing: inherit;
+      box-sizing: inherit;
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: 'Navigo-Bold', sans-serif;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    .page__wrapper {
+      padding-top: 48px;
+      padding-inline: 80px;
+    }
+
+    .main {
+      width: 100%;
+      display: flex;
+    }
+
+    .main__wrapper {
+      width: 100%;
+      max-width: 550px;
+      margin-top: 20vh;
+      margin-inline: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .main__icon {
+      width: 56px;
+      aspect-ratio: 1 / 1;
+      margin-bottom: 40px;
+    }
+
+    .main__caption {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 125%;
+      text-align: center;
+      color: #2b2d33;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .main__text {
+      font-family: 'ALS Hauss';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 157%;
+      text-align: center;
+      color: #808185;
+      margin: 0;
+    }
+
+    @media (max-width: 992px) {
+      .page__wrapper {
+        padding-top: 32px;
+        padding-inline: 40px;
+      }
+
+      .main__wrapper {
+        margin-top: 160px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .page__wrapper {
+        padding-top: 24px;
+        padding-inline: 16px;
+      }
+
+      .main__wrapper {
+        margin-top: 120px;
+      }
+    }
+  </style>
+
+  <div class="page__wrapper">
+    <header class="header">
+      <img src="images/logo.svg" alt="Raiffeisen" title="Raiffeisen">
+    </header>
+    <main class="main">
+
+      <div class="main__wrapper">
+        <img class="main__icon" src="images/error.svg" width="56" height="56" alt="confirmed">
+        <h1 class="main__caption">
+          Не получилось подтвердить почту
+        </h1>
+        <p class="main__text">
+          Ссылка недействительна или уже использовалась
+        </p>
+      </div>
+
+
+    </main>
+  </div>
+</body>
+
+</html>
